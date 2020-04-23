@@ -1,0 +1,83 @@
+    .container.home-intro-container {
+      position: relative;
+      top: -50px;
+      z-index: 8;
+    }
+
+    .container.centered {
+      text-align: center;
+    }
+
+    .container.item-header {
+      margin-top: 55px;
+      margin-bottom: 65px;
+    }
+
+    .home-intro-section {
+      height: 13%;
+      background-color: #000;
+    }
+
+    .home-intro {
+      position: relative;
+      overflow: hidden;
+      height: 105px;
+      padding-right: 170px;
+      border-radius: 3px;
+      background-color: #fff;
+      box-shadow: 0 0 9px 0 rgba(0, 0, 0, .16);
+    }
+
+    .intro-column {
+      height: 100%;
+    }
+
+    .intro-info {
+      position: relative;
+      height: 100%;
+      padding-top: 36px;
+      padding-left: 110px;
+    }
+
+    .intro-icon-1 {
+      position: absolute;
+      left: 30px;
+      top: 25px;
+      width: 60px;
+      height: 60px;
+      padding-top: 13px;
+      border: 3px solid #d0d0d0;
+      border-radius: 100%;
+      text-align: center;
+    }
+
+    .intro-info-title {
+      font-family: Montserrat, sans-serif;
+      color: #000;
+      font-size: 19px;
+      font-weight: 700;
+    }
+
+    .intro-info-title.subtitle {
+      color: #b5b5b5;
+      font-size: 13px;
+      font-weight: 400;
+    }
+
+    .intro-icon {
+      height: 24px;
+    }
+
+    .intro-row {
+      height: 100%;
+    }
+
+    .navhover a:hover:not(.active) {
+      background-color: #555;
+      color: peru;
+    }
+
+    .navbar-fixed-top.scrolled {
+      background-color: #F7CA44 !important;
+      transition: background-color 200ms linear;
+    }
