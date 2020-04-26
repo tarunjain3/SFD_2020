@@ -73,8 +73,8 @@
     }
 
     .navhover a:hover:not(.active) {
-      background-color: #555;
-      color: peru;
+      background-color: #f7ca44;
+      color: white;
     }
 
     .navbar-fixed-top.scrolled {
