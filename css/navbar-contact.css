@@ -81,3 +81,6 @@
       background-color: #F7CA44 !important;
       transition: background-color 200ms linear;
     }
+    .navPad{
+      padding-left: 20px !important;
+    }
