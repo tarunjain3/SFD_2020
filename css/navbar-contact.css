@@ -1,3 +1,5 @@
+    
+    
     .container.home-intro-container {
       position: relative;
       top: -50px;
@@ -23,6 +25,9 @@
       overflow: hidden;
       height: 105px;
       padding-right: 170px;
+      margin-right: 38px;
+      margin-right: 38px;
+      margin-left: 38px;
       border-radius: 3px;
       background-color: #fff;
       box-shadow: 0 0 9px 0 rgba(0, 0, 0, .16);
@@ -84,3 +89,49 @@
     .navPad{
       padding-left: 20px !important;
     }
+
+/* sponser and speaker */
+    .sponcer {
+      transition: 0.3s;
+      border-radius: 5px;
+    }
+    
+    .sponcer:hover {
+      box-shadow: 0px 24px 30px 0px rgba(0,0,0,0.2);
+      z-index: 100;
+    }
+
+
+    .speaker {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      border-radius: 5px;
+    }
+    
+    .speaker:hover {
+      box-shadow: 0px 24px 30px 0px rgba(0,0,0,0.2);
+      z-index: 100;
+    }
+    
+    img {
+      border-radius: 5px 5px 5px 5px;
+    }
+    /* end */
+    .headings-block{
+      padding: 5px;
+      background-color: #f7ca44;
+    }
+  .headings:hover{
+   color: white !important;
+  }
+  .about:hover{
+    box-shadow: 0px 24px 30px 0px rgba(0,0,0,0.2);
+    color: #f7ca44;
+  }
+  .modal {
+  position: absolute;
+  float: left;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
