@@ -30,8 +30,7 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light bg" id="ftco-navbar"
-    style=" z-index: 100;">
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light bg" id="ftco-navbar">
     <div class="container">
       <div class=" col-7">
         <a class="navbar-brand"><img src="images/sfd.png" width="50%"></a>
@@ -44,7 +43,7 @@
       </div>
 
 
-      <div class="collapse navbar-collapse " id="ftco-nav">
+      <div class="collapse navbar-collapse " id="ftco-nav" style="background-color:rgba(0, 0, 0, 0.5);">
         <!-- fixed  navbar-fixed-top -->
         <ul class="navbar-nav ml-auto">
           <li class="nav-item navhover" data-toggle="collapse" data-target="#ftco-nav"><a href="#about"
@@ -65,26 +64,50 @@
   </nav>
   <!-- END nav -->
 
-  <div class="block-31" style="position: relative;">
+  <!-- <div class="block-31" style="position: relative;">
     <div class=" loop-block-31 ">
       <div class="block-30 block-30-sm item" style="background-image: url('images/backgroungPic2.jpg');"
-        data-stellar-background-ratio="0.5">
-        <div class="container">
-          <div class="row align-items-center justify-content-center text-center">
-            <div class="col-md-7">
-              <h2 class="heading mb-5">Software Freedom Day <span class="txt-rotate" data-period="2000"
-                  data-rotate='[ "2020", "11th Edition", "Explore!" ]'></span></h2>
-              <p style="display: inline-block;"><a data-toggle="modal" data-target="#myModal" href="#" data-fancybox
+        data-stellar-background-ratio="0.5"> -->
+  <div class="container content " id="mySlider">
+    <div class="row align-items-center justify-content-center text-center">
+      <div class="col-md-7">
+        <h1 class="heading mb-5" style="color: white; font-size: 65px;">Software Freedom Day <span class="txt-rotate"
+            data-period="2000" data-rotate='[ "2020", "11th Edition", "Explore!" ]'></span></h1>
+        <!-- <p style="display: inline-block;"><a data-toggle="modal" data-target="#myModal" href="#" data-fancybox
                   class="ftco-play-video d-flex"><span class="play-icon-wrap align-self-center mr-4"><span><i
                         class="fas fa-play"></i></span></span> <span class="align-self-center">Watch
-                    Video</span></a></p>
-            </div>
-          </div>
-        </div>
+                    Video</span></a></p> -->
       </div>
-
     </div>
   </div>
+  <!-- </div>
+
+    </div>
+  </div> -->
+  <video autoplay muted loop class="embed-responsive embed-responsive-4by3" id="myVideo">
+    <source src="video/sfd_introductory.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <button class="font-weight-bold" id="myBtn" onclick="disbleMute()" type="button"><i id="mute_btn_icon"
+      class="fas fa-volume-mute"></i></button>
+
+  <script>
+    var vid = document.getElementById("myVideo");
+    var muteBtn = false;
+    function disbleMute() {
+
+
+      vid.muted = muteBtn;
+      muteBtn = !muteBtn
+      if (muteBtn) {
+        document.getElementById("mute_btn_icon").className = "fas fa-volume-up";
+      }
+      else {
+        document.getElementById("mute_btn_icon").className = "fas fa-volume-mute";
+      }
+    }
+  </script>
+
   <div class="modal fade" id="myModal">
     <div class="modal-dialog modal-xl">
       <div class="modal-content">
@@ -166,9 +189,10 @@
             <h3><a href="https://twitter.com/cokencode">Khushbu Parakh
               </a></h3>
             <span class="date mb-4 d-block text-muted">Developer for Avi Networks</span>
-            <p>Khushbu Parakh is a developer for Avi Networks, with her primary fields of interest being cloud
+            <p class="text-justify p-2">Khushbu Parakh is a developer for Avi Networks, with her primary fields of
+              interest being cloud
               computing, big data analytics and tech entrepreneurship. She is also a mentor at
-              @ghc.
+              ghc.
             </p>
             <p><a href="https://in.linkedin.com/in/khushbuparakh" class="link-underline"><i
                   class="fa fa-linkedin-square"></i>linkedin</a></p>
@@ -184,9 +208,9 @@
             <span class="date mb-4 d-block text-muted"> works at
               Gramener
             </span>
-            <p>Jaidev is an experienced data scientist and currently works at
-              Gramener
-              . An active contributor to the scientific python stack, he is also an experienced speaker.</p>
+            <p class="text-justify p-2">Jaidev is an experienced data scientist and currently works at
+              Gramener . An active contributor to the scientific python stack, he is also an experienced speaker and
+              have given professional talks.</p>
             <p><a href="https://www.linkedin.com/in/jaidevd/" class="link-underline"><i
                   class="fa fa-linkedin-square"></i>linkedin</a></p>
           </div>
@@ -199,7 +223,8 @@
             </a>
             <h3><a href="https://twitter.com/januverma">Janu Verma</a></h3>
             <span class="date mb-4 d-block text-muted"> Part of the data engineering team at AtlanHQ</span>
-            <p> Janu Verma is a machine learning and data visualization expert currently working at
+            <p class="text-justify p-2"> Janu Verma is a machine learning and data visualization expert currently
+              working at
               hikeapp
               . He has previously worked on the intersection of ML and Bioinformatics at Cornell University!</p>
             <p><a href="https://in.linkedin.com/in/janu-verma-b79b8823" class="link-underline"><i
@@ -211,6 +236,24 @@
       <div class="row">
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4 mb-lg-0">
           <div class="post-entry text-center speaker">
+            <a class="mb-3 img-wrap">
+              <img src="images/JoeNash.jpg" style="height:350px; width: 100%;" alt="Image placeholder"
+                class="img-fluid">
+            </a>
+            <h3><a href="https://twitter.com/jna_sh">Joe Nash
+              </a></h3>
+            <span class="date mb-4 d-block text-muted">student program manager at
+              github</span>
+            <p class="text-justify p-2">Joe Nash is the student program manager at
+              github and a firm believer in the educational benefits of hackathons. he has served as developer
+              advocate at PayPal and Improbable.
+            </p>
+            <p><a href="https://www.linkedin.com/in/joednash/" class="link-underline"><i
+                  class="fa fa-linkedin-square"></i>linkedin</a></p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4 mb-lg-0">
+          <div class="post-entry text-center speaker">
             <a class="mb-4 img-wrap">
               <img src="images/rsz_1sanyam_khurana.jpg" style="height:345px; width: 100%;" alt="Image placeholder"
                 class="img-fluid">
@@ -220,7 +263,8 @@
             <span class="date mb-4 d-block text-muted"> gsoc
               mentor for
               debian</span>
-            <p>Sanyam Khurana is a software developer and an active member of the open source community. A
+            <p class="text-justify p-2">Sanyam Khurana is a software developer and an active member of the open source
+              community. A
               gsoc
               mentor for
               debian
@@ -238,13 +282,17 @@
             <h3><a href="https://twitter.com/anubhamane">Anubha Maneshwar
               </a></h3>
             <span class="date mb-4 d-block text-muted">Founder of Girlscript Foundation</span>
-            <p>Anubha is an engineer and entrepreneur who is the founder of Girlscript Foundation
-              @Girlscript1
+            <p class="text-justify p-2">Anubha is an engineer and entrepreneur who is the founder of Girlscript
+              Foundation
+              Girlscript1
               . She wants to transform the Education space in India. </p>
             <p><a href="https://www.linkedin.com/in/anubhamane/" class="link-underline"><i
                   class="fa fa-linkedin-square"></i>linkedin</a></p>
           </div>
         </div>
+
+      </div>
+      <div class="row">
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4 mb-lg-0">
           <div class="post-entry text-center speaker">
             <a class="mb-3 img-wrap">
@@ -254,14 +302,13 @@
             <h3><a href="https://twitter.com/kps_foo">Karan Pratap Singh
               </a></h3>
             <span class="date mb-4 d-block text-muted">Co-founder of PULUG </span>
-            <p>Karan holds a masters degree from Georgia Tech. and is an entrepreneur in the Ed. Tech space! He is the
+            <p class="text-justify p-2">Karan holds a masters degree from Georgia Tech. and is an entrepreneur in the
+              Ed. Tech space! He is the
               co-founder of PULUG and was instrumental in bringing SFD to PU</p>
             <p><a href="https://www.linkedin.com/in/karanpratap/" class="link-underline"><i
                   class="fa fa-linkedin-square"></i>linkedin</a></p>
           </div>
         </div>
-      </div>
-      <div class="row">
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4 mb-lg-0">
           <div class="post-entry text-center speaker">
             <a class="mb-3 img-wrap">
@@ -271,7 +318,8 @@
             <h3><a href="https://in.linkedin.com/in/ljaysingh">L.S. Chhabra
               </a></h3>
             <span class="date mb-4 d-block text-muted">Founder of Cyber Defence Intelligence</span>
-            <p> L.S. Chhabra is a cyber security expert and founder and director at Cyber Defence Intelligence
+            <p class="text-justify p-2"> L.S. Chhabra is a cyber security expert and founder and director at Cyber
+              Defence Intelligence
               Consulting. he has been consulted by companies such as Facebook
               and Adobe.</p>
             <p><a href="https://in.linkedin.com/in/ljaysingh" class="link-underline"><i
@@ -286,26 +334,14 @@
             </a>
             <h3><a href="https://twitter.com/AkashTandon">Akash Tandon</a></h3>
             <span class="date mb-4 d-block text-muted"> Part of the data engineering team at AtlanHQ</span>
-            <p> Akash is part of the data engineering team at AtlanHQ. Akash is part of the data engineering team at
+            <p class="text-justify p-2"> Akash is part of the data engineering team at AtlanHQ. Akash is part of the
+              data engineering team at
               AtlanHQ. He is an open source enthusiast and a former gsoc intern.</p>
             <p><a href="https://www.linkedin.com/in/akashtandon/" class="link-underline"><i
                   class="fa fa-linkedin-square"></i>linkedin</a></p>
           </div>
         </div>
-        <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4 mb-lg-0">
-          <div class="post-entry text-center speaker">
-            <a class="mb-3 img-wrap">
-              <img src="images/PK-Mukhopadhyay.JPG" style="height:350px; width: 100%;" alt="Image placeholder"
-                class="img-fluid">
-            </a>
-            <h3><a href="https://www.linkedin.com/in/p-mukhopadhyay-63217622/"> PK Mukhopadhyay</a></h3>
-            <span class="date mb-4 d-block text-muted"> Former CTO of REC</span>
-            <p>Sri PK Mukhopadhyay is the former CTO of REC Ltd. and is an established professional in the Computer
-              Science & IT fields with more than 34 years of experience. </p>
-            <p><a href="https://www.linkedin.com/in/p-mukhopadhyay-63217622/" class="link-underline"><i
-                  class="fa fa-linkedin-square"></i>linkedin</a></p>
-          </div>
-        </div>
+
       </div>
       <!-- <div class="row">
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4 mb-lg-0">
@@ -355,12 +391,27 @@
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4 mb-lg-0">
           <div class="post-entry text-center speaker">
             <a class="mb-3 img-wrap">
+              <img src="images/PK-Mukhopadhyay.JPG" style="height:350px; width: 100%;" alt="Image placeholder"
+                class="img-fluid">
+            </a>
+            <h3><a href="https://www.linkedin.com/in/p-mukhopadhyay-63217622/"> PK Mukhopadhyay</a></h3>
+            <span class="date mb-4 d-block text-muted "> Former CTO of REC</span>
+            <p class="text-justify p-2">Sri PK Mukhopadhyay is the former CTO of REC Ltd. and is an established
+              professional in the Computer
+              Science & IT fields with more than 34 years of experience. </p>
+            <p><a href="https://www.linkedin.com/in/p-mukhopadhyay-63217622/" class="link-underline"><i
+                  class="fa fa-linkedin-square"></i>linkedin</a></p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4 mb-lg-0">
+          <div class="post-entry text-center speaker">
+            <a class="mb-3 img-wrap">
               <img src="images/Raghav-Arora.jpg" style="height:350px; width: 100%;" alt="Image placeholder"
                 class="img-fluid">
             </a>
             <h3><a href="https://twitter.com/raghavaroraa">Raghav Arora</a></h3>
             <span class="date mb-4 d-block text-muted">Manages the company CoCampus</span>
-            <p>Raghav manages the company CoCampus
+            <p class="text-justify p-2">Raghav manages the company CoCampus
               which helps students get industry mentorship and build their portfolio.Earliser he worked in
               research on data processing at KIT ,Germany</p>
             <p><a href="https://twitter.com/raghavaroraa" class="link-underline"><i
@@ -375,13 +426,16 @@
             </a>
             <h3><a href="https://www.linkedin.com/in/pooja-chawla-367841a9/">Pooja Chawla</a></h3>
             <span class="date mb-4 d-block text-muted"> Experienced UI/UX designer and speaker</span>
-            <p>Pooja is an experienced UI/UX designer with over 5 years of industry experience and also an experienced
+            <p class="text-justify p-2">Pooja is an experienced UI/UX designer with over 5 years of industry experience
+              and also an experienced
               speaker, having given talks at conferences like Design Jungle.</p>
             <p><a href="https://www.linkedin.com/in/pooja-chawla-367841a9/" class="link-underline"><i
                   class="fa fa-linkedin-square"></i>linkedin</a></p>
           </div>
         </div>
-        <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4 mb-lg-0">
+
+
+        <!-- <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4 mb-lg-0">
           <div class="post-entry text-center speaker">
             <a class="mb-3 img-wrap">
               <img src="images/Kartik-Arora.jpg" style="height:350px; width: 100%;" alt="Image placeholder"
@@ -395,7 +449,7 @@
             <p><a href="https://www.linkedin.com/in/ktech99/" class="link-underline"><i
                   class="fa fa-linkedin-square"></i>linkedin</a></p>
           </div>
-        </div>
+        </div> -->
 
       </div>
 
@@ -586,7 +640,7 @@
             We invite attendees to come to SFD in a spirit of curiosity, friendliness, open-mindedness, and respect. Any
             kind of harassment will not be tolerated.<br></p>
 
-           <p style="color: white;"> At the conference venue, you agree to:</p>
+          <p style="color: white;"> At the conference venue, you agree to:</p>
           <ul style="color: white;">
             <li>
               Be kind and sensitive to the people around you and respect the boundaries of other attendees.
@@ -601,14 +655,15 @@
             </li>
           </ul>
 
-          <p style="color: white;">This Code of Conduct applies to the venue of SFD 2020 Conference, pre-event and post-event informal
-          gathering, and all events organized by the organizing committee of Software Freedom Day.
-        </br>
+          <p style="color: white;">This Code of Conduct applies to the venue of SFD 2020 Conference, pre-event and
+            post-event informal
+            gathering, and all events organized by the organizing committee of Software Freedom Day.
+            </br>
 
-          If you are being harassed, notice that someone else is being harassed, or have any other concerns, please
-          contact someone from the organizing committee. The organizing team will be wearing “Organizing Team” I-D
-          cards and you can approach them for any kind of queries. Thank you for helping make this a welcoming,
-          friendly event for all.</br>
+            If you are being harassed, notice that someone else is being harassed, or have any other concerns, please
+            contact someone from the organizing committee. The organizing team will be wearing “Organizing Team” I-D
+            cards and you can approach them for any kind of queries. Thank you for helping make this a welcoming,
+            friendly event for all.</br>
 
 
           </p>
