@@ -136,3 +136,87 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
+#myVideo {
+  opacity: 0.9;
+  /* position: fixed; */
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: absolute;
+  top: 35%;
+  /* left: 5%; */
+  right: 12%;
+  
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  z-index: 100;
+}
+
+#myBtn {
+  position: absolute;
+  top : 78%;
+  right: 5%;
+  font-size: 20px;
+  padding: 6px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+#mySlider{
+  display: block;
+}
+
+@media (max-width: 640px) 
+{
+  #mySlider
+  {
+      display: none;
+  }
+}
+@media (max-width: 1200px) 
+{
+  #myBtn
+  {
+    top : 60%;  
+  }
+}
+@media (max-width: 950px) 
+{
+  #myBtn
+  {
+    top : 55%;  
+  }
+}
+@media (max-width: 790px) 
+{
+  #myBtn
+  {
+    top : 50%;  
+  }
+}
+@media (max-width: 700px) 
+{
+  #myBtn
+  {
+    top : 35%;  
+  }
+}
+@media (max-width: 630px) 
+{
+  #myBtn
+  {
+    top : 30%;  
+  }
+}

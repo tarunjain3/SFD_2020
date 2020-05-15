@@ -65,3 +65,7 @@ window.onload = function () {
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #f7ca44 }";
   document.body.appendChild(css);
 };
+
+
+
+
