@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500;600&family=Baloo+Paaji+2:wght@400;500;600&family=Comfortaa:wght@400;500;600;700&family=Montserrat:wght@100;400;500&family=Quicksand:wght@300;400;500&family=Raleway:wght@300;400;500;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500;600&family=Baloo+Paaji+2:wght@400;500;600&family=Comfortaa:wght@400;500;600;700&family=Montserrat:wght@100;400;500&family=Quicksand:wght@300;400;500&family=Raleway:wght@300;400;500;600&display=swap'); */
 
 body {
   font-family: "Overpass", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -291,18 +291,16 @@ h1, h2, h3, h4, h5,
   .block-41 .block-41-text {
     font-size: 20px; } }
 
-.block-48 {
-  text-align: center;
-  background: #FFB328;
-  padding: 50px;
-  color: #fff; 
-  font-family: 'Quicksand', sans-serif;
-}
-  .block-48 .block-48-text-1 {
-    font-size: 30px; }
-  .block-48 .block-48-counter {
-    font-size: 55px;
-    line-height: 1; }
+    .block-48 {
+      background: #f7ca44;
+      padding: 50px;
+      color: #000; }
+      .block-48 .block-48-text-1 {
+        font-size: 30px; }
+      .block-48 .block-48-counter {
+        font-size: 55px;
+        line-height: 1; }
+    
 
 .block-11 .owl-stage {
   padding-top: 50px;
