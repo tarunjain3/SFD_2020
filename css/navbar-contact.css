@@ -94,7 +94,7 @@
 /* sponser and speaker */
     .sponcer {
       transition: 0.3s;
-      border-radius: 5px;
+      border-radius: 10px;
     }
         .speaker {
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -108,7 +108,7 @@
     }
     
     img {
-      border-radius: 5px 5px 5px 5px;
+      border-radius: 10px 10px 5px 5px;
     }
     /* end */
     .headings-block{
@@ -173,7 +173,7 @@
   display: block;
 }
 
-@media (max-width: 640px) 
+@media (max-width: 800px) 
 {
   #mySlider
   {
