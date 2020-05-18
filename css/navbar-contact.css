@@ -80,7 +80,25 @@
 
     .navhover a:hover:not(.active) {
       background-color: #f7ca44;
+      border-radius: 15%;
       color: white;
+    }
+    .navhover-scrolled a:hover:not(.active) {
+      background-color: grey;
+      border-radius: 15%;
+      color: white;
+    }
+    .navhover-mid{
+      padding-left: 1% ;
+      padding-right: 1% ;
+    }
+    .navhover-Start_end{
+      padding-right: 1% ;
+      padding-right: 0% ;
+    }
+    .navhover-end{
+      padding-left: 1% ;
+      padding-right: 0 ;
     }
 
     .navbar-fixed-top.scrolled {
@@ -91,6 +109,28 @@
       padding-left: 20px !important;
     }
 
+    .navbar_bg{
+      background-color:rgba(0, 0, 0, 0.4);
+      border-radius: 20px;
+    }
+    .navbar_bg_scrolled{
+      background-color: #F7CA44;
+      border-radius: 20px;
+    }
+    
+    #navbar {
+      overflow: hidden;
+    }
+    .sticky {
+      position: fixed;
+      top: -15px !important;
+      width: 100%;
+    }
+    
+    .sticky {
+      padding-top: 10px;
+    }
+    
 /* sponser and speaker */
     .sponcer {
       transition: 0.3s;
@@ -115,7 +155,7 @@
     }
     
     img {
-      border-radius: 10px 10px 5px 5px;
+      border-radius: 8px 8px 8px 8px;
     }
     /* end */
     .headings-block{
@@ -159,10 +199,11 @@
 }
 
 #myBtn {
+  outline: none;
   position: absolute;
   top : 78%;
   right: 5%;
-  font-size: 20px;
+  font-size: 1.8vw;
   padding: 6px;
   border: none;
   background: #000;
@@ -171,24 +212,46 @@
 }
 
 #myBtn:hover {
+  outline: none;
   background: #ddd;
   color: black;
 }
 #mySlider{
   display: block;
 }
-
 @media (max-width: 800px) 
 {
-  #mySlider
-  {
-      display: none;
+  .content {
+    position: absolute;
+    top: 25%;
+    
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    z-index: 100;
+  }
+}
+
+
+@media (max-width: 550px) 
+{
+  .content {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+  
+    
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    z-index: 100;
   }
 }
 @media (max-width: 1200px) 
 {
   #myBtn
   {
+    outline: none;
     top : 60%;  
   }
 }
@@ -196,6 +259,7 @@
 {
   #myBtn
   {
+    outline: none;
     top : 55%;  
   }
 }
@@ -203,6 +267,7 @@
 {
   #myBtn
   {
+    outline: none;
     top : 50%;  
   }
 }
@@ -210,6 +275,7 @@
 {
   #myBtn
   {
+    outline: none;
     top : 35%;  
   }
 }
@@ -217,6 +283,18 @@
 {
   #myBtn
   {
+    outline: none;
     top : 30%;  
   }
 }
+@media (max-width: 765px) 
+{
+  #pclub_img
+  {
+   display: none !important;
+  }
+}
+.pclub_img
+  {
+   display: none !important;
+  }

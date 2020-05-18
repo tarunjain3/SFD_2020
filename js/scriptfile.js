@@ -1,10 +1,19 @@
 
-$(function () {
-  $(document).scroll(function () {
-    var $nav = $(".navbar-fixed-top");
-    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+$(function() {
+  var header = $(".navbar_bg");
+  $(window).scroll(function() {    
+      var scroll = $(window).scrollTop();
+  
+      if (scroll >= 550) {
+          header.removeClass('navbar_bg').addClass("navbar_bg_scrolled");
+          header.removeClass('navhover').addClass("navhover-scrolled");
+      } else {
+          header.removeClass("navbar_bg_scrolled").addClass('navbar_bg');
+          header.removeClass("navhover-scrolled").addClass('navhover');
+      }
   });
 });
+
 
 
 
@@ -67,5 +76,5 @@ window.onload = function () {
 };
 
 
-
+// sticky navbar
 
