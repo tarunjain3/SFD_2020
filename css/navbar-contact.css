@@ -138,7 +138,7 @@
     }
     
     #navbar {
-      z-index: 100;
+      z-index: 102;
       overflow: hidden;
     }
     .sticky {
@@ -237,6 +237,7 @@
   color: black;
 }
 #mySlider{
+  left: 4%;
   display: block;
 }
 @media (max-width: 800px) 
