@@ -76,16 +76,37 @@
       height: 100%;
     }
 
+   
+
+    @media(min-width:1000px){
+      .navhover a:hover:not(.active) {
+        background-color: #f7ca44;
+        border-radius: 15%;
+        color: white;
+      }
+    }
+      @media (max-width: 1000px) 
+  {
     .navhover a:hover:not(.active) {
-      background-color: #f7ca44;
       border-radius: 15%;
       color: white;
     }
+  }
+    @media(min-width:1000px){
     .navhover-scrolled a:hover:not(.active) {
       background-color: grey;
       border-radius: 15%;
       color: white;
     }
+  }
+    @media (max-width: 1000px) 
+{
+  .navhover-scrolled a:hover:not(.active) {
+      border-radius: 15%;
+      color: white;
+    }
+}
+
     .navhover-mid{
       padding-left: 1% ;
       padding-right: 1% ;
@@ -104,7 +125,7 @@
       transition: background-color 200ms linear;
     }
     .navPad{
-      padding-left: 20px !important;
+      padding-left: 1.30vw !important;
     }
 
     .navbar_bg{
@@ -113,7 +134,7 @@
     }
     .navbar_bg_scrolled{
       background-color: #F7CA44;
-      border-radius: 20px;
+      border-radius: 1.302vw;
     }
     
     #navbar {
