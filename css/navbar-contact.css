@@ -138,6 +138,7 @@
     }
     
     #navbar {
+      z-index: 100;
       overflow: hidden;
     }
     .sticky {
@@ -257,7 +258,7 @@
   .content {
     position: absolute;
     top: 20%;
-    left: 5%;
+    /* left: 5%; */
   
     
     color: #f1f1f1;
