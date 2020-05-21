@@ -220,9 +220,10 @@
 
 #myBtn {
   outline: none;
-  position: absolute;
-  top : 78%;
-  right: 5%;
+  position: relative;
+  bottom: 120px;
+  /* top : 78%; */
+  left: 90%;
   font-size: 1.8vw;
   padding: 6px;
   border: none;
@@ -237,7 +238,6 @@
   color: black;
 }
 #mySlider{
-  left: 4%;
   display: block;
 }
 @media (max-width: 800px) 
@@ -268,12 +268,34 @@
     z-index: 100;
   }
 }
+@media (max-width: 400px) 
+{
+  .content {
+    position: absolute;
+    top: 18%;
+    /* left: 5%; */
+  
+    
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    z-index: 100;
+  }
+}
+@media (max-width: 550px) 
+{
+  .heading {
+    position: absolute;
+   left: 40%;
+  }
+}
 @media (max-width: 1200px) 
 {
   #myBtn
   {
     outline: none;
-    top : 60%;  
+    position: relative;
+    bottom : 60px;  
   }
 }
 @media (max-width: 950px) 
@@ -281,7 +303,9 @@
   #myBtn
   {
     outline: none;
-    top : 55%;  
+    /* top : 55%;   */
+    position: relative;
+    bottom : 80px;  
   }
 }
 @media (max-width: 790px) 
@@ -289,7 +313,9 @@
   #myBtn
   {
     outline: none;
-    top : 50%;  
+    /* top : 50%;   */
+    position: relative;
+    bottom : 80px; 
   }
 }
 @media (max-width: 700px) 
@@ -297,7 +323,9 @@
   #myBtn
   {
     outline: none;
-    top : 35%;  
+    /* top : 35%;   */
+    position: relative;
+    bottom : 70px; 
   }
 }
 @media (max-width: 630px) 
@@ -305,7 +333,9 @@
   #myBtn
   {
     outline: none;
-    top : 30%;  
+    /* top : 30%;   */
+    position: relative;
+    bottom : 70px; 
   }
 }
 @media (max-width: 765px) 
