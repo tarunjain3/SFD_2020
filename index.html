@@ -31,9 +31,9 @@
 <body>
   <div style="border: 5px solid #f7ca44;">
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light bg" id="navbar">
-      <div class="container">
-        <div class=" col-6">
-          <a href="#" class="navbar-brand"><img src="images/sfd.png" width="60%"></a>
+      <div class="container navbar_bg">
+        <div class=" col-5">
+          <div id = "refresh" class="navbar-brand"><img src="images/sfd.png" width="60%"></div>
         </div>
         <div class="">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
@@ -43,7 +43,7 @@
         </div>
 
 
-        <div class="collapse navbar-collapse  navbar_bg" id="ftco-nav">
+        <div class="collapse navbar-collapse " id="ftco-nav">
           <!-- fixed  navbar-fixed-top -->
           <ul class="navbar-nav ml-auto">
             <li class="nav-item navhover" data-toggle="collapse" data-target="#ftco-nav"><a href="#about"
@@ -828,6 +828,9 @@
         }
       }
 
+      document.getElementById("refresh").onclick = function () {
+        location.href = "#";
+    };
 
       function headsfd() {
         var element = document.getElementById("mySlider");

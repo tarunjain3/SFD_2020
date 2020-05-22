@@ -97,6 +97,7 @@
       background-color: grey;
       border-radius: 15%;
       color: white;
+      margin-top: 4px;
     }
   }
     @media (max-width: 1000px) 
