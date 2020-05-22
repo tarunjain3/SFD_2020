@@ -133,10 +133,12 @@
       background-color:rgba(0, 0, 0, 0.4);
       border-radius: 20px;
     }
+    @media (min-width: 1000px) {
     .navbar_bg_scrolled{
       background-color: #F7CA44;
       border-radius: 1.302vw;
     }
+  }
     
     #navbar {
       z-index: 102;
