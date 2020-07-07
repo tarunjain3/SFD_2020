@@ -201,7 +201,7 @@
 }
 
 #myVideo {
-  opacity: 0.9;
+  /* opacity: 0.9; */
   /* position: fixed; */
   right: 0;
   bottom: 0;
