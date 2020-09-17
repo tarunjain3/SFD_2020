@@ -13,7 +13,7 @@ section .section-title {
 
 #tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     /* color: #f3f3f3; */
-    background-color: #FFE4B5;
+    background-color: #f7ca44;
     /* border-color: transparent transparent #f3f3f3; */
     border-bottom: 4px solid !important;
     font-size: 20px;
