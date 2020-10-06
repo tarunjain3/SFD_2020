@@ -735,8 +735,9 @@ textarea.form-control {
   perspective: 1000;
   /* -ms-transform: perspective(1000px);
   -moz-transform: perspective(1000px); */
-  -moz-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d; }
+  /* -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;  */
+}
   .flip-container:hover .back, .flip-container.hover .back {
     -webkit-transform: rotateY(0deg);
     -moz-transform: rotateY(0deg);
